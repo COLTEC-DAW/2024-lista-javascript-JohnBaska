@@ -1,17 +1,22 @@
-var palavra = prompt("Número de linhas")
-var tamanho = palavra.length
-var parl = true
+// Verificando Palíndromos
 
-for (let i = 0; i < tamanho/2; i++){
-    if (palavra[i] != palavra[tamanho - (i+1)]){
-        parl = false;
+var palavra = prompt("Número de linhas")
+
+function verificaPalindromo (palavra){
+    var tamanho = palavra.length
+    var pl = true
+
+    for (let i = 0; i < tamanho/2; i++){
+        if (palavra[i] != palavra[tamanho - (i+1)]){
+            parl = false;
+        }
+
     }
 
+    return pl
 }
 
-
-
-if (parl == true){
+if (verificaPalindromo(palavra) == true){
     console.log("É palindromo")
 }else{
     console.log("Não é palindromo")

@@ -1,12 +1,17 @@
-var Num_linhas = parseInt(prompt("Número de linhas"))
-var str = ""
+// Tabuleiro de Xadrez
 
-for (let i = 0; i < Num_linhas; i++){
-    if (i % 2 != 0){
-        str += "# # # # \n"
-    }else{
-        str += " # # # #\n"
+var Num_linhas = parseInt(prompt("Número de linhas"))
+
+function tabuleiroXadrez (Num_linhas){
+    var str = ""
+
+    for (let i = 0; i < Num_linhas; i++){
+        if (i % 2 != 0){
+            str += "# # # # \n"
+        }else{
+            str += " # # # #\n"
+        }
     }
 }
 
-console.log(str)
+console.log(tabuleiroXadrez(Num_linhas))
