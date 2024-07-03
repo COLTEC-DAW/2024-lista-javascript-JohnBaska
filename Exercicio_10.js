@@ -39,4 +39,3 @@ while (current !== null) {
     console.log(current.value)
     current = current.rest
 }
-
